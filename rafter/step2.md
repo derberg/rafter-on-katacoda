@@ -43,4 +43,4 @@ Add Bucket name to the environment variable
 `export BUCKET_NAME=$(kubectl get bucket pages -o jsonpath='{.status.remoteName}')`{{execute}}
 
 Echo and then copy the link and open it in a browser to see the website works fine
-`echo https://[[HOST_SUBDOMAIN]]-31311-[[KATACODA_HOST]].environments.katacoda.com/$BUCKET_NAME/webpage/examples-master/asset-store/webpage/index.html`
+`echo https://[[HOST_SUBDOMAIN]]-31311-[[KATACODA_HOST]].environments.katacoda.com/$BUCKET_NAME/webpage/examples-master/asset-store/webpage/index.html`{{execute}}
