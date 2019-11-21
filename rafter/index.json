@@ -27,7 +27,7 @@
     }
   },
   "environment": {
-    "uilayout": "terminal-iframe"
+    "uilayout": "terminal"
   },
   "backend": {
     "imageid": "minikube-running",
