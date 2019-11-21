@@ -42,5 +42,5 @@ Make sure that the Asset is in Ready status, as it means that fetching, unpackin
 Add Bucket name to the environment variable
 `export BUCKET_NAME=$(kubectl get bucket pages -o jsonpath='{.status.remoteName}')`{{execute}}
 
-Click on below link to see the website works fine in a browser
-https://[[HOST_SUBDOMAIN]]-31311-[[KATACODA_HOST]].environments.katacoda.com/[[BUCKET_NAME]]/webpage/examples-master/asset-store/webpage/index.html
+Echo and then copy the link and open it in a browser to see the website works fine
+`echo https://[[HOST_SUBDOMAIN]]-31311-[[KATACODA_HOST]].environments.katacoda.com/$BUCKET_NAME/webpage/examples-master/asset-store/webpage/index.html`
