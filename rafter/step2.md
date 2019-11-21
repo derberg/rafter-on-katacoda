@@ -39,6 +39,8 @@ EOF
 
 Make sure that the Asset is in Ready status, as it means that fetching, unpacking and filtering is completed
 `kubectl get assets webpage -o jsonpath='{.status.phase}'`{{execute}}
+Add Bucket name to the environment variable
+`export BUCKET_NAME=$(kubectl get bucket pages -o jsonpath='{.status.remoteName}')`{{execute}}
 
 Click on below link to see the website works fine in a browser
-https://[[HOST_SUBDOMAIN]]-31311-[[KATACODA_HOST]].environments.katacoda.com/$(kubectl get bucket pages -o jsonpath='{.status.remoteName}')/webpage/examples-master/asset-store/webpage/index.html
+https://[[HOST_SUBDOMAIN]]-31311-[[KATACODA_HOST]].environments.katacoda.com/[[BUCKET_NAME]]/webpage/examples-master/asset-store/webpage/index.html
