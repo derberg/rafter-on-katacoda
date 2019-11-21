@@ -39,6 +39,7 @@ EOF
 
 Make sure that the Asset is in Ready status, as it means that fetching, unpacking and filtering is completed
 `kubectl get assets webpage -o jsonpath='{.status.phase}'`{{execute}}
+
 Add Bucket name to the environment variable
 `export BUCKET_NAME=$(kubectl get bucket pages -o jsonpath='{.status.remoteName}')`{{execute}}
 

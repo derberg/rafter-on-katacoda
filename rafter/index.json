@@ -6,17 +6,21 @@
   "details": {
     "steps": [
       {
-        "title": "Step 1",
+        "title": "Rafter installation",
         "text": "step1.md",
         "code": "install-rafter.sh"
       },
       {
-        "title": "Step 2",
+        "title": "Use Case 1 - Rafter as a static sites host",
         "text": "step2.md"
       },
       {
-        "title": "Step 3",
+        "title": "Use Case 2 - Rafter as a content storage with webhook services usage",
         "text": "step3.md"
+      },
+      {
+        "title": "Use Case 3 - Rafter as a content storage with advanced webhook services usage",
+        "text": "step4.md"
       }
     ],
     "intro": {
