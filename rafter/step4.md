@@ -37,9 +37,9 @@ Time for checking if the file is now really in the storage and you can extract i
 
 Add Bucket name to the environment variable
 `export BUCKET_NAME=$(kubectl get bucket content -o jsonpath='{.status.remoteName}')`{{execute}}
-`export FILE_NAME=$(kubectl get asset markdown-file -o jsonpath='{.status.assetRef.files[0].name}')`{{execute}}
+`export FILE_NAME=$(kubectl get asset asyncapi-file -o jsonpath='{.status.assetRef.files[0].name}')`{{execute}}
 
 Try to fetch the file in the terminal
-`curl https://[[HOST_SUBDOMAIN]]-31311-[[KATACODA_HOST]].environments.katacoda.com/$BUCKET_NAME/$FILE_NAME`{{execute}}
+`curl https://[[HOST_SUBDOMAIN]]-31311-[[KATACODA_HOST]].environments.katacoda.com/$BUCKET_NAME/asyncapi-file/$FILE_NAME`{{execute}}
 
 The file should start with `asyncapi: '2.0.0'`
