@@ -13,4 +13,4 @@ Check if Tiller is running
 Install Rafter
 `helm repo add rafter-charts https://rafter-charts.storage.googleapis.com`{{execute}}
 `helm repo update`{{execute}}
-`helm install --name rafter rafter-charts/rafter`{{execute}}
+`helm install --name rafter --set minio.service.type=NodePort rafter-charts/rafter`{{execute}}
