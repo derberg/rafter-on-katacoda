@@ -1,6 +1,6 @@
 **Use Case 3 - Rafter as content storage using advanced webhook services**
 
->**NOTE:** In this scenario you reuse the `content` bucket created in the previous use case.
+In this scenario, you reuse the `content` bucket created in the previous use case, push an Asset to it and communicate with a webhook service responsible for the validation and conversion of AsyncAPI specifications. Follow these steps:
 
 1. Export a URL to a single AsyncAPI specification file:
 

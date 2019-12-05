@@ -1,5 +1,7 @@
 **Use Case 2 - Rafter as content storage using webhook services**
 
+In this scenario, you will create a Bucket, push an Asset to it and communicate with a webhook service responsible for extracting metadata from Markdown files. Follow these steps:
+
 1. Export a URL to a single Markdown file as an environment variable:
 
    `export MARKDOWN_FILE_URL=https://gist.githubusercontent.com/derberg/01666184bac1ddb4b388c31739924dca/raw/b1d0aff9dcc5f5ee309c33d330b9ba23de470da0/sample-markdown.md`{{execute}}

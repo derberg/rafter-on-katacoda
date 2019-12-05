@@ -1,4 +1,4 @@
-*Use Case 1 - Rafter as static sites host**
+**Use Case 1 - Rafter as static sites host**
 
 In this scenario, you will create a Bucket and then push an Asset to it. The Asset is a package containing all static files needed to build a website, such as HTML, JS and CSS files. Follow these steps:
 
