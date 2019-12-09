@@ -51,11 +51,13 @@ In this scenario, you will create a Bucket, push an Asset to it and communicate 
 
    `kubectl get asset markdown-file -o jsonpath='{.status.assetRef.files[0].metadata.title}'`{{execute}}
 
-6. Make sure that the file is in storage and you can extract it. Export the Bucket name and the file name as environment variables:
+To make sure that the file is in storage and you can extract it, proceed with the next two steps:
 
-   `export BUCKET_NAME=$(kubectl get bucket content -o jsonpath='{.status.remoteName}')`{{execute}}
+6. Export the file name and the name of the Bucket available in the Bucket status and as environment variables. The name of the Bucket in storage is not exactly the same as the name of a specific Bucket CR:
 
    `export FILE_NAME=$(kubectl get asset markdown-file -o jsonpath='{.status.assetRef.files[0].name}')`{{execute}}
+
+   `export BUCKET_NAME=$(kubectl get bucket content -o jsonpath='{.status.remoteName}')`{{execute}}
 
 7. Fetch the file in the terminal window:
 

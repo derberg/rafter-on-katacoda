@@ -1,6 +1,6 @@
 ## Meet Rafter
 
-Rafter is a solution for storing and managing different types of files. It uses MinIO as object storage and gives you the ability to manage files using Kubernetes custom resources. In brief, Rafter is a fully Kubernetes-native content managing system!
+Rafter is a solution for storing and managing different types of files. It uses MinIO as object storage and gives you the ability to manage files using Kubernetes custom resources.
 
 Check out [Rafter repository](https://github.com/kyma-project/rafter) on GitHub to learn more.
 

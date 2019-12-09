@@ -2,7 +2,7 @@
 
 In this scenario, you will create a Bucket and then push an Asset to it. The Asset is a package containing all static files needed to build a website, such as HTML, JS and CSS files. Follow these steps:
 
-1. Export a GitHub webpage URL of ready-to-use website sources.
+1. Export a variable with ready-to-use sources of a simple website.
 
    `export GH_WEBPAGE_URL=https://github.com/kyma-project/examples/archive/master.zip`{{execute}}
 
@@ -44,7 +44,7 @@ In this scenario, you will create a Bucket and then push an Asset to it. The Ass
 
    `kubectl get assets webpage -o jsonpath='{.status.phase}'`{{execute}}
 
-5. Export the Bucket name as an environment variable:
+5. Export the name of the Bucket available in the Bucket status as an environment variable. The name of the Bucket in storage is not exactly the same as the name of a specific Bucket CR:
 
    `export BUCKET_NAME=$(kubectl get bucket pages -o jsonpath='{.status.remoteName}')`{{execute}}
 
