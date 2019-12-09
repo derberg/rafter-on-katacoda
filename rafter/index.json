@@ -1,6 +1,6 @@
 {
   "title": "Rafter simple flow",
-  "description": "Simple setup of Rafter with basic asset flow",
+  "description": "Simple Rafter setup with basic asset flow",
   "difficulty": "Beginner",
   "time": "10 minutes",
   "details": {
@@ -8,18 +8,18 @@
       {
         "title": "Rafter installation",
         "text": "step1.md",
-        "code": "install-rafter.sh"
+        "code": "setup.sh"
       },
       {
-        "title": "Use Case 1 - Rafter as a static sites host",
+        "title": "Use Case 1 - Rafter as static sites host",
         "text": "step2.md"
       },
       {
-        "title": "Use Case 2 - Rafter as a content storage with webhook services usage",
+        "title": "Use Case 2 - Rafter as content storage using basic webhook services",
         "text": "step3.md"
       },
       {
-        "title": "Use Case 3 - Rafter as a content storage with advanced webhook services usage",
+        "title": "Use Case 3 - Rafter as content storage using advanced webhook services",
         "text": "step4.md"
       }
     ],

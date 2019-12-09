@@ -1,3 +1,3 @@
 # Rafter ON Katacoda
 
-Set of tutorials to quickly start with concepts of amazing [Rafter](https://github.com/kyma-project/rafter/).
+This repository contains a set of tutorials which introduce you to some basic concepts of [Rafter](https://github.com/kyma-project/rafter/).
