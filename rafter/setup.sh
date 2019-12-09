@@ -27,7 +27,7 @@ kubectl create clusterrolebinding tiller --clusterrole cluster-admin --serviceac
 helm init --service-account=tiller
 
 echo "Waiting for Tiller to be up..."
-LIMIT=20
+LIMIT=30
 COUNTER=0
 
 
